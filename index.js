@@ -1,8 +1,8 @@
-var express = require('express')
-var cors = require('cors')
 require('dotenv').config()
+const express = require('express')
+const cors = require('cors')
 
-var app = express()
+const app = express()
 
 app.use(cors())
 app.use('/public', express.static(process.cwd() + '/public'))
